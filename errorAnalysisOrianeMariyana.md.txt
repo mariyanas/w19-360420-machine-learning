@@ -1,0 +1,42 @@
+Mariyana Slavova, Oriane Roy
+Sameer Bhatnagar
+Introduction to Computer Programming in Science and Engineering
+14 May 2019
+
+#Error Analysis Report
+
+Each time we run the classification model, we get a different accuracy since in lines 148-150, 
+there is a new 'Random' object that is created and the data set gets shuffled.  
+Still, the model's performance is pretty accurate with its results being approximately the ones below:
+Accuracy mean over 1000 loops is: 0.96
+Accuracy standard dev over 1000 loops is: 1.6E-4
+Precision mean over 1000 loops is: 0.95
+Precision standard dev over 1000 loops is: 7.5E-4
+Recall mean over 1000 loops is: 0.95
+Recall standard dev over 1000 loops is: 8.5E-4
+We compare our model's performance with the original breast cancer data and the frequency of the
+results. 
+
+A false postive is when the data predicts that what it was searching for is present while it 
+is not. Similarly, a false negative is when the data reports that there is nothing while there 
+is something. These terms are most seen in binary tests such as this one.
+
+What makes Recall and Precision different is that Recall measures the frequency of the true 
+positive data found by the program according to the actual malignant data while Precision measures
+the precison of the program by calculating the frequency of the true positive data divided by the
+true positives and the false positives.  
+
+These results change with the hyperparameter k since the function is locally approximated. The nearest
+neighnours weigh more in the calculations than the rest of the data which makes the model even more
+accurate.
+
+
+
+
+
+
+
+
+
+
+
